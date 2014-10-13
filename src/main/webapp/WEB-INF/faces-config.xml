@@ -12,12 +12,12 @@
         </locale-config>
         <!--Global JSF localized UI messages.-->
         <resource-bundle>
-            <base-name>pl.gda.pg.eti.kask.javaee.jsf.view.messages</base-name>
+            <base-name>pl.adamborowski.kask.jsf.view.messages</base-name>
             <var>msg</var>
         </resource-bundle>
         <!--Global JSF localized validator, errors, warings, etc. messages.-->
         <message-bundle>
-            pl.gda.pg.eti.kask.javaee.jsf.view.validation
+            pl.adamborowski.kask.jsf.view.validation
         </message-bundle>
     </application>
 </faces-config>

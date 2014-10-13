@@ -1,25 +1,31 @@
-<?xml version='1.0' encoding='UTF-8' ?> 
+<?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:ui="http://java.sun.com/jsf/facelets"
       xmlns:h="http://java.sun.com/jsf/html">
 
-    <h:head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <ui:insert name="head"/>
-        <h:outputStylesheet name="styles.css" library="css" />
-    </h:head>
+<h:head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <ui:insert name="head"/>
+    <h:outputStylesheet name="metro-bootstrap.min.css"/>
+    <h:outputStylesheet name="jquery-ui.min.css"/>
+    <h:outputStylesheet name="iconFont.min.css"/>
+    <h:outputStylesheet name="compass/stylesheets/screen.css"/>
+    <h:outputScript name="jquery-2.1.1.min.js"/>
+    <h:outputScript name="jquery-ui.min.js"/>
+    <h:outputScript name="metro.min.js"/>
+</h:head>
 
-    <h:body>
+<h:body styleClass="metro">
 
-        <div id="top">
-            <h1>${msg.books}</h1>
-        </div>
+    <div id="top">
+        <h1>${msg.books}</h1>
+    </div>
 
-        <div id="content">
-            <ui:insert name="content"/>
-        </div>
+    <div id="content">
+        <ui:insert name="content"/>
+    </div>
 
-    </h:body>
+</h:body>
 
 </html>
