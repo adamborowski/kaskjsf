@@ -17,7 +17,67 @@
 </h:head>
 
 <h:body styleClass="metro">
+    <nav class="navigation-bar dark">
+        <div class="navigation-bar-content">
+            <div class="element">
+                <a class="dropdown-toggle" href="#">
+                    ${msg.site_title}
+                </a>
+                <ul class="dropdown-menu" data-role="dropdown">
+                    <li><a href="index.jsf">Main</a></li>
+                    <li>
+                        <a href="#" class="dropdown-toggle">Active users</a>
+                        <ul class="dropdown-menu place-right" data-role="dropdown">
+                        </ul>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#" class="dropdown-toggle">Currencies</a>
+                        <ul class="dropdown-menu place-right" data-role="dropdown" style="width:300px">
+                        </ul>
 
+                    </li>
+
+                </ul>
+            </div>
+
+            <span class="element-divider"></span>
+            <a class="element brand" href="#"><span class="icon-spin"></span></a>
+            <a class="element brand" href="#"><span class="icon-printer"></span></a>
+            <span class="element-divider"></span>
+
+            <div class="element input-element">
+                <form>
+                    <div class="input-control text">
+                        <input type="text" placeholder="Search..."/>
+                        <button class="btn-search"></button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="element place-right">
+                <a class="dropdown-toggle" href="#">
+                    <span class="icon-cog"></span>
+                </a>
+                <ul class="dropdown-menu place-right" data-role="dropdown">
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Download</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Buy Now</a></li>
+                </ul>
+            </div>
+            <span class="element-divider place-right"></span>
+            <a class="element place-right" href="#"><span class="icon-locked-2"></span></a>
+            <span class="element-divider place-right"></span>
+
+
+        </div>
+    </nav>
+    <!--<% for (String flash : ((Flashes) session.getAttribute("flashes")).getMessages()) { %>-->
+    <!--<div class="margin10 fg-white notice marker-on-top bg-<%=r.getString(flash+ ".color")%>">-->
+    <!--<%= flash.startsWith("message.") ? r.getString(flash) : flash %>-->
+<!--</div>-->
+<!--<% } %>-->
     <div id="top">
         <h1>${msg.books}</h1>
     </div>
