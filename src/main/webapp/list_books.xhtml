@@ -21,7 +21,7 @@
                 <h:outputText value="#{tower.height}m"/>
             </h:column>
             <h:column>
-                <h:dataTable value="#{tower.wizzards}" var="wizzard">
+                <h:dataTable value="#{tower.wizzards}" var="wizzard" styleClass="table bordered">
                     <h:column>
                         <h:outputText value="#{wizzard.id}"/>
                     </h:column>
@@ -29,57 +29,33 @@
                         <h:outputText value="#{wizzard.name}"/>
                     </h:column>
                     <h:column>
-                        <h:outputText value="#{wizzard.environment}"/>
+                        <h:outputText value="#{wizzard.environment.toString()}"/>
                     </h:column>
                     <h:column>
                         <h:outputText value="#{wizzard.mana} *"/>
                     </h:column>
                 </h:dataTable>
             </h:column>
-        </h:dataTable>
-        <header>------------------------------- </header>
-        <h:dataTable value="#{listBooks.books}" var="book" styleClass="table bordered">
             <h:column>
-                <h:outputText value="#{book.id}"/>
-            </h:column>
-            <h:column>
-                <h:outputText value="#{book.title}"/>
-            </h:column>
-            <h:column>
-                <h:dataTable value="#{book.authors}" var="author">
-                    <h:column>
-                        <h:outputText value="#{author.name}"/>
-                    </h:column>
-                    <h:column>
-                        <h:outputText value="#{author.surname}"/>
-                    </h:column>
-                </h:dataTable>
-            </h:column>
-            <h:column>
-                <h:outputText value="#{book.publishDate}">
-                    <f:convertDateTime pattern="yyyy-MM-dd"/>
-                </h:outputText>
-            </h:column>
-            <h:column>
-                <h:button value="#{msg.view}" outcome="view_book.xhtml">
-                    <f:param name="bookId" value="#{book.id}"/>
+                <h:button value="#{msg.view}" outcome="view_tower.xhtml">
+                    <f:param name="towerId" value="#{tower.id}"/>
                 </h:button>
             </h:column>
             <h:column>
-                <h:button value="#{msg.edit}" outcome="edit_book.xhtml">
-                    <f:param name="bookId" value="#{book.id}"/>
+                <h:button value="#{msg.edit}" outcome="edit_tower.xhtml">
+                    <f:param name="towerId" value="#{tower.id}"/>
                 </h:button>
             </h:column>
             <h:column>
                 <h:form>
-                    <h:commandButton value="#{msg.remove}" action="#{listBooks.removeBook(book)}"/>
+                    <h:commandButton value="#{msg.remove}" action="#{listTowers.removeTower(tower)}"/>
                 </h:form>
             </h:column>
         </h:dataTable>
         <h:form>
-            <h:commandButton value="#{msg.download}" action="#{listBooks.downloadLibraryXML()}"/>
+            <h:commandButton value="#{msg.download}" action="#{listTowers.downloadLibraryXML()}"/>
         </h:form>
-        <h:button value="#{msg.new}" outcome="edit_book.xhtml"/>
+        <h:button value="#{msg.new}" outcome="edit_tower.xhtml"/>
     </ui:define>
 </ui:composition>
 </body>

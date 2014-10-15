@@ -12,7 +12,6 @@ import javax.faces.validator.Validator;
 import javax.faces.validator.ValidatorException;
 
 /**
- *
  * @author psysiu
  */
 @ManagedBean
@@ -21,9 +20,9 @@ public class BookTitleValidator implements Validator {
 
     private static final String PATTERN = "^[A-Z][a-z0-9]*([ ][A-Za-z0-9]*)*$";
 
-    private static final String WRONG_TITLE = "pl.gda.pg.eti.kask.javaee.jsf.validators.titleValidator.WRONG_TITLE";
+    private static final String WRONG_TITLE = "pl.adamborowski.kask.jsf.validators.titleValidator.WRONG_TITLE";
 
-    private static final String WRONG_VALUE = "pl.gda.pg.eti.kask.javaee.jsf.validators.titleValidator.WRONG_VALUE";
+    private static final String WRONG_VALUE = "pl.adamborowski.kask.jsf.validators.titleValidator.WRONG_VALUE";
 
     public ResourceBundle getMessageBundle() {
         FacesContext facesContext = FacesContext.getCurrentInstance();
