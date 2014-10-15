@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.adamborowski.pl/kask/jsf"
+        xsi:schemaLocation="http://www.adamborowski.pl/kask/jsf">
+    <tower id="1" name="twin tower" height="42">
+        <wizzard id="1" name="Lupek wodnisty" mana="34" environment="water"/>
+        <wizzard id="2" name="Mongoq ognisty" mana="34" environment="fire"/>
+        <wizzard id="3" name="Vardep wietrzny" mana="34" environment="wind"/>
+    </tower>
+    <tower id="2" name="pustelnia" height="14">
+        <wizzard id="4" name="Samotnik wietrzny" mana="199" environment="wind"/>
+    </tower>
+    <tower id="3" name="opuszczona" height="33"/>
+</root>
