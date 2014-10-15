@@ -1,9 +1,7 @@
 
 package pl.adamborowski.kask.jsf.entities2;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,21 +35,18 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "tower", propOrder = {"wizzards"})
 @NoArgsConstructor
+@ToString
+@EqualsAndHashCode
+@AllArgsConstructor
+@Getter
+@Setter
 public class Tower {
-    @Getter
-    @Setter
     @XmlElement(required = true, name = "wizzard")
     protected List<Sorcerer> wizzards;
-    @Getter
-    @Setter
     @XmlAttribute(name = "id", required = true)
     protected int id;
-    @Getter
-    @Setter
     @XmlAttribute(name = "name", required = true)
     protected String name;
-    @Getter
-    @Setter
     @XmlAttribute(name = "height")
     protected Integer height;
 }

@@ -1,9 +1,7 @@
 
 package pl.adamborowski.kask.jsf.entities2;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -40,22 +38,18 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "sorcerer")
 @NoArgsConstructor
+@ToString
+@EqualsAndHashCode
+@AllArgsConstructor
+@Getter
+@Setter
 public class Sorcerer {
-
-    @Getter
-    @Setter
     @XmlAttribute(name = "id", required = true)
     protected int id;
-    @Getter
-    @Setter
     @XmlAttribute(name = "name", required = true)
     protected String name;
-    @Getter
-    @Setter
     @XmlAttribute(name = "mana", required = true)
     protected int mana;
-    @Getter
-    @Setter
     @XmlAttribute(name = "environment", required = true)
     protected Environment environment;
 
