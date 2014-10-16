@@ -3,10 +3,7 @@ package pl.adamborowski.kask.jsf.entities2;
 
 import lombok.*;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAttribute;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 
 
 /**
@@ -38,8 +35,8 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "sorcerer")
 @NoArgsConstructor
-@ToString
-@EqualsAndHashCode
+@ToString(exclude = "tower")
+@EqualsAndHashCode(exclude = "tower")
 @AllArgsConstructor
 @Getter
 @Setter
@@ -52,5 +49,6 @@ public class Sorcerer {
     protected int mana;
     @XmlAttribute(name = "environment", required = true)
     protected Environment environment;
-
+    @XmlTransient
+    protected Tower tower;
 }

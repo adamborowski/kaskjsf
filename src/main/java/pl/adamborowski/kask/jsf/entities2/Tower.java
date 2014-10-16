@@ -42,7 +42,7 @@ import javax.xml.bind.annotation.XmlType;
 @Setter
 public class Tower {
     @XmlElement(required = true, name = "wizzard")
-    protected List<Sorcerer> wizzards;
+    protected List<Sorcerer> wizzards = new ArrayList<>();
     @XmlAttribute(name = "id", required = true)
     protected int id;
     @XmlAttribute(name = "name", required = true)

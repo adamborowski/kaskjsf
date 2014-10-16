@@ -3,9 +3,7 @@ package pl.adamborowski.kask.jsf.view;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.extern.java.Log;
-import pl.adamborowski.kask.jsf.BookService;
 import pl.adamborowski.kask.jsf.TowerService;
-import pl.adamborowski.kask.jsf.entities.Book;
 import pl.adamborowski.kask.jsf.entities2.Sorcerer;
 import pl.adamborowski.kask.jsf.entities2.Tower;
 
@@ -18,42 +16,38 @@ import java.io.Serializable;
 import java.util.logging.Level;
 
 /**
- *
  * @author psysiu
  */
 @ViewScoped
 @ManagedBean
 @Log
-public class ViewTower implements Serializable {
+public class ViewWizzard implements Serializable {
 
     @ManagedProperty("#{towerService}")
     private TowerService towerService;
 
     @Getter
     @Setter
-    private int towerId;
+    private int wizzardId;
 
     @Getter
     @Setter
-    private Tower tower;
+    private Sorcerer wizzard;
 
     public void setTowerService(TowerService towerService) {
         this.towerService = towerService;
     }
-    
+
     public void init() {
-        if (tower== null) {
-            tower= towerService.findTower(towerId);
+        if (wizzard == null) {
+            wizzard = towerService.findWizzard(wizzardId);
         }
-        if (tower == null) {
+        if (wizzard == null) {
             try {
                 FacesContext.getCurrentInstance().getExternalContext().redirect("error/404.xhtml");
             } catch (IOException ex) {
                 log.log(Level.SEVERE, null, ex);
             }
         }
-    }
-    public void removeWizzard(Sorcerer wizzard){
-        towerService.removeWizzard(wizzard);
     }
 }

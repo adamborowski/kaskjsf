@@ -4,10 +4,12 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import pl.adamborowski.kask.jsf.TowerService;
+import pl.adamborowski.kask.jsf.entities2.Sorcerer;
 import pl.adamborowski.kask.jsf.entities2.Tower;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ManagedProperty;
+import javax.faces.bean.RequestScoped;
 import javax.faces.bean.ViewScoped;
 import javax.faces.context.ExternalContext;
 import javax.faces.context.FacesContext;
@@ -31,8 +33,8 @@ public class ListTowers implements Serializable {
     @ManagedProperty("#{towerService}")
     private TowerService towerService;
 
-
     private List<Tower> towers;
+    private List<Sorcerer> wizzards;
 
     public List<Tower> getTowers() {
         if (towers == null) {
@@ -41,10 +43,18 @@ public class ListTowers implements Serializable {
         return towers;
     }
 
+    public List<Sorcerer> getWizzards() {
+        if (wizzards == null) {
+            wizzards = towerService.findAllWizzards();
+        }
+        return wizzards;
+    }
+
     public void removeTower(Tower tower) {
         towerService.removeTower(tower);
         towers.remove(tower);
     }
+
 
     public void downloadLibraryXML() throws IOException {
         FacesContext fc = FacesContext.getCurrentInstance();
