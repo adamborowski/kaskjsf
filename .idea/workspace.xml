@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a30bc20e-62ee-43a3-b44a-28ea214c04f0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pl/adamborowski/kask/jsf/TowerService.java" afterPath="$PROJECT_DIR$/src/main/java/pl/adamborowski/kask/jsf/TowerService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/list_books.xhtml" afterPath="$PROJECT_DIR$/src/main/webapp/list_books.xhtml" />
-    </list>
+    <list default="true" id="a30bc20e-62ee-43a3-b44a-28ea214c04f0" name="Default" comment="" />
     <ignored path="JSFJAXB.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -510,7 +507,7 @@
       <changelist id="a30bc20e-62ee-43a3-b44a-28ea214c04f0" name="Default" comment="" />
       <created>1413232452997</created>
       <updated>1413232452997</updated>
-      <workItem from="1413232454778" duration="22751000" />
+      <workItem from="1413232454778" duration="22760000" />
     </task>
     <task id="LOCAL-00001" summary="resources css js added">
       <created>1413235370062</created>
@@ -536,7 +533,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22751000" />
+    <option name="totallyTimeSpent" value="22760000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="79" y="24" width="1841" height="1056" extended-state="6" />
