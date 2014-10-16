@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a30bc20e-62ee-43a3-b44a-28ea214c04f0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pl/adamborowski/kask/jsf/TowerService.java" afterPath="$PROJECT_DIR$/src/main/java/pl/adamborowski/kask/jsf/TowerService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/list_books.xhtml" afterPath="$PROJECT_DIR$/src/main/webapp/list_books.xhtml" />
     </list>
     <ignored path="JSFJAXB.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,16 +26,48 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="messages.properties" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="messages.properties" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/pl/adamborowski/kask/jsf/view/messages.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.03076923" vertical-offset="0" max-vertical-offset="585">
-              <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+            <state vertical-scroll-proportion="-5.586207" vertical-offset="0" max-vertical-offset="432">
+              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
               <folding />
             </state>
           </provider>
           <provider editor-type-id="ResourceBundle">
             <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view_tower.xhtml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/view_tower.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-19.74074" vertical-offset="421" max-vertical-offset="1188">
+              <caret line="53" column="23" selection-start-line="39" selection-start-column="12" selection-end-line="53" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list_books.xhtml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/list_books.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-20.407408" vertical-offset="367" max-vertical-offset="1530">
+              <caret line="51" column="31" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TowerService.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/adamborowski/kask/jsf/TowerService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.09771987" vertical-offset="1182" max-vertical-offset="1908">
+              <caret line="81" column="46" selection-start-line="81" selection-start-column="46" selection-end-line="81" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
@@ -81,15 +114,15 @@
         <option value="$PROJECT_DIR$/src/main/java/pl/adamborowski/kask/jsf/view/converters/TowerConverter.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/edit_wizzard.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/edit_tower.xhtml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/list_books.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/view_tower.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/view_wizzard.xhtml" />
         <option value="$PROJECT_DIR$/src/main/resources/pl/adamborowski/kask/jsf/view/messages.properties" />
         <option value="$PROJECT_DIR$/src/main/java/pl/adamborowski/kask/jsf/view/ListBooks.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/adamborowski/kask/jsf/TowerService.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/main.xhtml" />
         <option value="$PROJECT_DIR$/src/main/java/pl/adamborowski/kask/jsf/view/ListTowers.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/adamborowski/kask/jsf/view/ViewTower.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/list_books.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/adamborowski/kask/jsf/TowerService.java" />
       </list>
     </option>
   </component>
@@ -477,7 +510,7 @@
       <changelist id="a30bc20e-62ee-43a3-b44a-28ea214c04f0" name="Default" comment="" />
       <created>1413232452997</created>
       <updated>1413232452997</updated>
-      <workItem from="1413232454778" duration="22186000" />
+      <workItem from="1413232454778" duration="22751000" />
     </task>
     <task id="LOCAL-00001" summary="resources css js added">
       <created>1413235370062</created>
@@ -503,11 +536,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22186000" />
+    <option name="totallyTimeSpent" value="22751000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="79" y="24" width="1841" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -531,7 +564,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32916668" sideWeight="0.49972144" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.49972144" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24958217" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24958217" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -960,20 +993,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/adamborowski/kask/jsf/TowerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1980">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1732#1733#0" expanded="true" />
-            <element signature="e#1787#1788#0" expanded="true" />
-            <element signature="e#1834#1835#0" expanded="true" />
-            <element signature="e#1891#1892#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/main.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1926">
@@ -998,22 +1017,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/list_books.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1260">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/view_tower.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1188">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/view_wizzard.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
@@ -1024,13 +1027,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/pl/adamborowski/kask/jsf/view/messages.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.03076923" vertical-offset="0" max-vertical-offset="585">
-          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        <state vertical-scroll-proportion="-5.586207" vertical-offset="0" max-vertical-offset="432">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
           <folding />
         </state>
       </provider>
       <provider editor-type-id="ResourceBundle">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/view_tower.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.74074" vertical-offset="421" max-vertical-offset="1188">
+          <caret line="53" column="23" selection-start-line="39" selection-start-column="12" selection-end-line="53" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/list_books.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.407408" vertical-offset="367" max-vertical-offset="1530">
+          <caret line="51" column="31" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/adamborowski/kask/jsf/TowerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09771987" vertical-offset="1182" max-vertical-offset="1908">
+          <caret line="81" column="46" selection-start-line="81" selection-start-column="46" selection-end-line="81" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>

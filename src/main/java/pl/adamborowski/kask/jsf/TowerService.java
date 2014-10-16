@@ -79,7 +79,7 @@ public class TowerService {
 
     public void saveTower(Tower tower) {
         if (tower.getId() == 0) {
-            tower.setId(towers.lastKey() + 1);
+            tower.setId(towers.isEmpty() ? 1 : towers.lastKey() + 1);
         }
         towers.put(tower.getId(), tower);
     }
@@ -87,7 +87,7 @@ public class TowerService {
     public void saveWizzard(Sorcerer wizzard) {
         if (wizzard.getId() == 0) {
             //dodanie
-            wizzard.setId(wizzards.lastKey() + 1);
+            wizzard.setId(wizzards.isEmpty() ? 1 : wizzards.lastKey() + 1);
         }
         wizzards.put(wizzard.getId(), wizzard);
         for (Tower tower : towers.values()) {

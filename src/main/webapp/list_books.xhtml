@@ -35,6 +35,21 @@
                     <h:column>
                         <h:outputText value="#{wizzard.mana} *"/>
                     </h:column>
+                    <h:column>
+                        <h:button value="#{msg.view}" outcome="view_wizzard.xhtml">
+                            <f:param name="wizzardId" value="#{wizzard.id}"/>
+                        </h:button>
+                    </h:column>
+                    <h:column>
+                        <h:button value="#{msg.edit}" outcome="edit_wizzard.xhtml">
+                            <f:param name="wizzardId" value="#{wizzard.id}"/>
+                        </h:button>
+                    </h:column>
+                    <h:column>
+                        <h:form>
+                            <h:commandButton value="#{msg.remove}" action="#{viewTower.removeWizzard(wizzard)}"/>
+                        </h:form>
+                    </h:column>
                 </h:dataTable>
             </h:column>
             <h:column>
