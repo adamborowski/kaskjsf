@@ -3,6 +3,7 @@ package pl.adamborowski.kask.jsf.entities2;
 
 import lombok.*;
 
+import javax.persistence.*;
 import javax.xml.bind.annotation.*;
 
 
@@ -40,15 +41,28 @@ import javax.xml.bind.annotation.*;
 @AllArgsConstructor
 @Getter
 @Setter
+//
+@Entity
+@Table(name = "wizzards")
+@NamedQuery(name = "Sorcerer.findAll", query = "SELECT b FROM Sorcerer b")
 public class Sorcerer {
+    @Column
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @XmlAttribute(name = "id", required = true)
-    protected int id;
+    protected Integer id;
+    @Column
     @XmlAttribute(name = "name", required = true)
     protected String name;
+    @Column
     @XmlAttribute(name = "mana", required = true)
-    protected int mana;
+    protected Integer mana;
+    @Column
+    @Enumerated(EnumType.STRING)
     @XmlAttribute(name = "environment", required = true)
     protected Environment environment;
     @XmlTransient
+    @ManyToOne()
+    @JoinColumn(name = "tower_id")
     protected Tower tower;
 }

@@ -4,7 +4,6 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.extern.java.Log;
 import pl.adamborowski.kask.jsf.TowerService;
-import pl.adamborowski.kask.jsf.entities.Author;
 import pl.adamborowski.kask.jsf.entities2.Environment;
 import pl.adamborowski.kask.jsf.entities2.Sorcerer;
 import pl.adamborowski.kask.jsf.entities2.Tower;
@@ -35,9 +34,6 @@ public class EditWizzard implements Serializable {
     @Setter
     private int wizzardId;
 
-    @Getter
-    @Setter
-    private Author a;
 
     @Getter
     @Setter

@@ -5,6 +5,7 @@ import lombok.*;
 
 import java.util.ArrayList;
 import java.util.List;
+import javax.persistence.*;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
@@ -40,13 +41,24 @@ import javax.xml.bind.annotation.XmlType;
 @AllArgsConstructor
 @Getter
 @Setter
+//
+@Entity
+@Table(name = "towers")
+@NamedQuery(name = "Tower.findAll", query = "SELECT b FROM Tower b")
 public class Tower {
     @XmlElement(required = true, name = "wizzard")
+    //
+    @OneToMany(mappedBy = "tower", cascade = CascadeType.ALL)
     protected List<Sorcerer> wizzards = new ArrayList<>();
+    @Column
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @XmlAttribute(name = "id", required = true)
-    protected int id;
+    protected Integer id;
+    @Column
     @XmlAttribute(name = "name", required = true)
     protected String name;
+    @Column
     @XmlAttribute(name = "height")
     protected Integer height;
 }

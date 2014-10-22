@@ -3,22 +3,15 @@ package pl.adamborowski.kask.jsf.view;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.extern.java.Log;
-import pl.adamborowski.kask.jsf.BookService;
 import pl.adamborowski.kask.jsf.TowerService;
-import pl.adamborowski.kask.jsf.entities.Author;
-import pl.adamborowski.kask.jsf.entities.Book;
-import pl.adamborowski.kask.jsf.entities.Cover;
 import pl.adamborowski.kask.jsf.entities2.Tower;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ManagedProperty;
 import javax.faces.bean.ViewScoped;
 import javax.faces.context.FacesContext;
-import javax.faces.model.SelectItem;
 import java.io.IOException;
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.logging.Level;
 
 /**
@@ -36,9 +29,6 @@ public class EditTower implements Serializable {
     @Setter
     private int towerId;
 
-    @Getter
-    @Setter
-    private Author a;
 
     @Getter
     @Setter
