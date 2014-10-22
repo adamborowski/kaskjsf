@@ -2,28 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a30bc20e-62ee-43a3-b44a-28ea214c04f0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/glassfish-resources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/pl/adamborowski/kask/jsf/BookService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/pl/adamborowski/kask/jsf/entities/Author.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/pl/adamborowski/kask/jsf/entities/Book.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/pl/adamborowski/kask/jsf/entities/Cover.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/pl/adamborowski/kask/jsf/entities/Library.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/pl/adamborowski/kask/jsf/entities/ObjectFactory.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/pl/adamborowski/kask/jsf/entities/package-info.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/pl/adamborowski/kask/jsf/entities/validators/InPast.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/pl/adamborowski/kask/jsf/entities/validators/InPastValidator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/pl/adamborowski/kask/jsf/view/EditBook.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/pl/adamborowski/kask/jsf/view/ListBooks.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/pl/adamborowski/kask/jsf/view/ViewBook.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/pl/adamborowski/kask/jsf/view/converters/AuthorConverter.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pl/adamborowski/kask/jsf/view/EditTower.java" afterPath="$PROJECT_DIR$/src/main/java/pl/adamborowski/kask/jsf/view/EditTower.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pl/adamborowski/kask/jsf/view/EditWizzard.java" afterPath="$PROJECT_DIR$/src/main/java/pl/adamborowski/kask/jsf/view/EditWizzard.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JSFJAXB.iml" afterPath="$PROJECT_DIR$/JSFJAXB.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pl/adamborowski/kask/jsf/entities2/Sorcerer.java" afterPath="$PROJECT_DIR$/src/main/java/pl/adamborowski/kask/jsf/entities2/Sorcerer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pl/adamborowski/kask/jsf/entities2/Tower.java" afterPath="$PROJECT_DIR$/src/main/java/pl/adamborowski/kask/jsf/entities2/Tower.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pl/adamborowski/kask/jsf/TowerService.java" afterPath="$PROJECT_DIR$/src/main/java/pl/adamborowski/kask/jsf/TowerService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JSFJAXB.iws" />
@@ -816,7 +794,7 @@
       <updated>1413232452997</updated>
       <workItem from="1413232454778" duration="22892000" />
       <workItem from="1413493474640" duration="304000" />
-      <workItem from="1413962224523" duration="3132000" />
+      <workItem from="1413962224523" duration="3141000" />
     </task>
     <task id="LOCAL-00001" summary="resources css js added">
       <created>1413235370062</created>
@@ -838,11 +816,15 @@
       <created>1413419740723</created>
       <updated>1413419740723</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="działa JPA">
+      <created>1413965363952</created>
+      <updated>1413965363952</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26328000" />
+    <option name="totallyTimeSpent" value="26337000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="79" y="-4" width="1841" height="1084" extended-state="6" />
@@ -904,7 +886,8 @@
     <MESSAGE value="resources css js added" />
     <MESSAGE value="listowanie działa" />
     <MESSAGE value="działa" />
-    <option name="LAST_COMMIT_MESSAGE" value="działa" />
+    <MESSAGE value="działa JPA" />
+    <option name="LAST_COMMIT_MESSAGE" value="działa JPA" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
