@@ -2,6 +2,7 @@
 package pl.adamborowski.kask.jsf.entities2;
 
 import lombok.*;
+import pl.adamborowski.kask.jsf.entities2.validators.GoodMana;
 
 import javax.persistence.*;
 import javax.xml.bind.annotation.*;
@@ -56,6 +57,7 @@ public class Sorcerer {
     protected String name;
     @Column
     @XmlAttribute(name = "mana", required = true)
+    @GoodMana(maximumMana = 1234, dividableBy = 666)
     protected Integer mana;
     @Column
     @Enumerated(EnumType.STRING)
